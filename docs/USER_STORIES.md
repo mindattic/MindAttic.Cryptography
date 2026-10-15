@@ -6,19 +6,13 @@ layer: stories
 status: living
 updated: 2026-10-12
 ---
+<!-- workflow-db: this repo's stories and tickets live in the MindAttic.Workflow database -->
 
 # MindAttic.Cryptography — User Stories
-> ✅ done (shipped & tested) · 🟡 partial · ⬜ planned. Every ✅ cites the test.
 
-## Priority backlog
-_Nothing recorded yet._
+This repo's stories and tickets (CRY-US-…, CRY-T…) live in the MindAttic.Workflow database
+(`MindAttic.Workflow/data/workflow.db`), not in this file. Use the `workflow` CLI:
 
-## Tickets
-> Permanent log of every change and fix — this repo's ticket system. Rows are append-only: never
-> delete or reword one; only move its Status (open → closed / wont-do) and fill in Ref. Status is
-> a word, not a glyph, so tickets don't count toward the story index. Keep this section last.
-
-| ID | Date | Type | Status | Summary | Ref |
-|---|---|---|---|---|---|
-| CRY-T1 | 2026-10-12 | docs | closed | Start the permanent ticket log in USER_STORIES.md | — |
-| CRY-T2 | 2026-10-15 | chore | closed | Remove duplicate command copies (/quickload, /quicksave) now centralized at the user level (~/.claude/commands) | WF-T14 |
+- Read: `workflow story list --repo MindAttic.Cryptography`, `workflow ticket list --repo MindAttic.Cryptography`, `workflow ticket show <ID>`
+- Change: `workflow ticket new` / `close`, `workflow story status <ID> done|partial|planned`, `workflow ticket link <A> requires <B>`
+- This file as it was, rebuilt from the database: `workflow db export --repo MindAttic.Cryptography`
