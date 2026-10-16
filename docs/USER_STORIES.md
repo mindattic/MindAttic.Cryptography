@@ -1,7 +1,7 @@
 ---
 codex: 1
 project: MindAttic.Cryptography
-code: CRY
+code: M.CRYP
 layer: stories
 status: living
 updated: 2026-10-12
@@ -21,5 +21,5 @@ _Nothing recorded yet._
 
 | ID | Date | Type | Status | Summary | Ref |
 |---|---|---|---|---|---|
-| CRY-T1 | 2026-10-12 | docs | closed | Start the permanent ticket log in USER_STORIES.md | — |
-| CRY-T2 | 2026-10-15 | chore | closed | Remove duplicate command copies (/quickload, /quicksave) now centralized at the user level (~/.claude/commands) | WF-T14 |
+| M.CRYP-T1 | 2026-10-12 | docs | closed | Start the permanent ticket log in USER_STORIES.md | — |
+| M.CRYP-T2 | 2026-10-15 | chore | closed | Remove duplicate command copies (/quickload, /quicksave) now centralized at the user level (~/.claude/commands) | M.FLOW-T14 |
